@@ -1,0 +1,53 @@
+.clients {
+    display: flex;  
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    @media screen and (min-width: $desc){
+        flex-wrap: nowrap;
+    }
+}
+
+.clients-items {
+    flex-basis: calc((100% - 1 * 30px) / 2);
+
+        @media screen and (min-width: $tab) {
+            flex-basis: calc((100% - 2 * 30px) / 3);
+        }
+
+        @media screen and (min-width: $desc) {
+            flex-basis: calc((100% - 5 * 30px) / 6);
+        }
+
+    &__link {
+        display: block;
+        width: 100%;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        padding-left: 32px;
+        padding-right: 32px;
+        text-align: center;
+
+        border: 1px solid var(--social-icon);
+        border-radius: 4px;
+
+        color: var(--social-icon);
+
+        transition: color var(--anim),
+        border-color var(--anim);
+
+        &:hover,
+        &:focus {
+            color: var(--accent-color);
+            border-color: var(--accent-color);
+        }
+    }
+
+    &__logo {
+        width: 106px;
+        height: 60px;
+
+        fill: currentColor;
+    }
+}
