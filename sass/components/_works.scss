@@ -52,17 +52,23 @@
     position: absolute;
     top: 0;
     left: 0;
-    overflow: auto;
+    // overflow: auto;
 
-    padding: 63px 24px;
-    width: 100%;
+    padding: 44px 24px;
+    max-width: 100%;
     height: 100%;
+  
 
     background-color: var(--overlay);
 
     transform: translateY(102%);
     /* opacity: 0; */
     transition: transform var(--anim);
+
+    @media screen and (max-width: $pre-tab) {
+      overflow-y: auto; 
+      overflow-x: hidden;
+    }
   }
 
   &__text {
@@ -70,6 +76,7 @@
     line-height: 1.6;
 
     color: var(--primary-white-color);
+
   }
 }
 

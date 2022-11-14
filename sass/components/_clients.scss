@@ -25,8 +25,8 @@
     width: 100%;
     padding-top: 16px;
     padding-bottom: 16px;
-    padding-left: 32px;
-    padding-right: 32px;
+    padding-left: 0;
+    padding-right: 0;
     text-align: center;
 
     border: 1px solid var(--social-icon);
@@ -35,6 +35,13 @@
     color: var(--social-icon);
 
     transition: color var(--anim), border-color var(--anim);
+
+    @media screen and (min-width: $desc) {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+
 
     &:hover,
     &:focus {
