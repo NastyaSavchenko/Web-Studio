@@ -3,14 +3,15 @@
     padding-top: 60px;
     padding-bottom: 60px;
 
-    background-color: var(--backgrount-color);}
-    
-    @media screen and (min-width: $desc) {
-        .footer__container{
-            display: flex;
-            align-items: baseline;        
-        }
+    background-color: var(--backgrount-color);
+}
+
+@media screen and (min-width: $desc) {
+    .footer__container {
+        display: flex;
+        align-items: baseline;
     }
+}
 
 .address-box {
     display: flex;
@@ -19,12 +20,12 @@
     width: 231px;
     margin-bottom: 60px;
 
-    @media screen and (max-width: $pre-tab){
+    @media screen and (max-width: $pre-tab) {
         margin-left: auto;
         margin-right: auto;
     }
 
-    @media screen and (min-width: $desc){
+    @media screen and (min-width: $desc) {
         align-items: flex-start;
         margin-right: 70px;
         margin-bottom: 0;
@@ -34,7 +35,7 @@
 .address {
     text-align: center;
 
-    @media screen and (min-width: $desc){
+    @media screen and (min-width: $desc) {
         text-align: start;
     }
 
@@ -70,15 +71,15 @@
 .join {
     margin-bottom: 60px;
 
-    @media screen and (min-width: $pre-desc){
+    @media screen and (min-width: $pre-desc) {
         display: flex;
-        flex-direction: column;  
+        flex-direction: column;
     }
 
-     @media screen and (min-width: $desc){
+    @media screen and (min-width: $desc) {
         margin-right: 93px;
         margin-bottom: 0;
-     }
+    }
 }
 
 .footer-title {
@@ -92,7 +93,7 @@
 
     @media screen and (max-width: $pre-desc) {
         text-align: center;
-    } 
+    }
 }
 
 .footer-social {
@@ -125,12 +126,12 @@
     }
 }
 
-.tabl{
+.tabl {
 
-    @media screen and (min-width: $tab){
-            display: flex;
-            justify-content: space-around;
-            align-items: baseline;
+    @media screen and (min-width: $tab) {
+        display: flex;
+        justify-content: space-around;
+        align-items: baseline;
     }
 }
 
@@ -139,9 +140,9 @@
     flex-direction: column;
     align-items: center;
 
-         @media screen and (min-width: $desc){
+    @media screen and (min-width: $desc) {
         align-items: flex-start;
-     }
+    }
 }
 
 .subscribe-box {
@@ -150,10 +151,10 @@
     flex-direction: column;
     width: 100%;
 
-    @media screen and (min-width: $desc){
+    @media screen and (min-width: $desc) {
         flex-direction: row;
         align-items: flex-start;
-     }
+    }
 }
 
 .subscribe {
@@ -166,7 +167,7 @@
         margin-bottom: 20px;
         margin-left: auto;
         margin-right: auto;
-        
+
 
         font-size: 16px;
         line-height: 1.25;
@@ -179,8 +180,8 @@
         transition: border-color var(--anim);
 
         @media screen and (min-width: $tab) {
-                width: 450px;
-            }
+            width: 450px;
+        }
 
         @media screen and (min-width: $desc) {
             margin-right: 12px;
@@ -215,7 +216,7 @@
         border: 0;
         border-radius: 4px;
         transition: box-shadow var(--anim);
-        cursor: pointer ;
+        cursor: pointer;
 
         &:hover,
         &:focus {

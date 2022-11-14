@@ -22,43 +22,44 @@
     background-image: linear-gradient(to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)),
-      url(../images/bg/bg-480@2x.jpg);}
+      url(../images/bg/bg-480@2x.jpg);
+  }
 
-    @media screen and (min-width: $tab) {
-      background-size: cover;
+  @media screen and (min-width: $tab) {
+    background-size: cover;
+    background-image: linear-gradient(to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+      url(../images/bg/bg-768.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
       background-image: linear-gradient(to right,
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)),
-        url(../images/bg/bg-768.jpg);
-
-      @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-        background-image: linear-gradient(to right,
-            rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)),
-          url(../images/bg/bg-768@2x.jpg);
-      }
+        url(../images/bg/bg-768@2x.jpg);
     }
-
-        @media screen and (min-width: $desc) {
-          height: 600px;
-          background-size: cover;
-          background-image: linear-gradient(to right,
-              rgba(47, 48, 58, 0.4),
-              rgba(47, 48, 58, 0.4)),
-            url(../images/bg/bg-1200.jpg);
-    
-          @media (min-device-pixel-ratio: 2),
-          (min-resolution: 192dpi),
-          (min-resolution: 2dppx) {
-            background-image: linear-gradient(to right,
-                rgba(47, 48, 58, 0.4),
-                rgba(47, 48, 58, 0.4)),
-              url(../images/bg/bg-1200@2x.jpg);
-          }
-        }
   }
+
+  @media screen and (min-width: $desc) {
+    height: 600px;
+    background-size: cover;
+    background-image: linear-gradient(to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+      url(../images/bg/bg-1200.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)),
+        url(../images/bg/bg-1200@2x.jpg);
+    }
+  }
+}
 
 .hero {
   max-width: 360px;

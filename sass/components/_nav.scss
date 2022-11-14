@@ -1,6 +1,7 @@
 .pages-header {
-    border-bottom: 1px solid var(--border-nav);
+  border-bottom: 1px solid var(--border-nav);
 }
+
 .nav {
   display: flex;
 }
@@ -32,7 +33,7 @@
   background-color: var(--main-background-color);
 
   transition: transform var(--anim), background-color var(--anim);
-  
+
 
   &__text {
     position: relative;
@@ -63,7 +64,7 @@
   }
 
   &:hover,
-  &:focus{
+  &:focus {
     transform: rotate(180deg);
     background-color: var(--accent-color);
   }
@@ -130,7 +131,7 @@
   display: flex;
   margin-left: auto;
 
-  @media screen and (min-width: $tab) and (max-width: $pre-desc){
+  @media screen and (min-width: $tab) and (max-width: $pre-desc) {
     flex-direction: column;
     justify-content: center;
   }
@@ -139,8 +140,8 @@
     margin-bottom: 10px;
 
     @media screen and (min-width: $desc) {
-        margin-right: 30px;
-        margin-bottom: 0;
+      margin-right: 30px;
+      margin-bottom: 0;
     }
   }
 
@@ -148,8 +149,8 @@
     display: flex;
 
     @media screen and (min-width: $desc) {
-        padding-top: 32px;
-        padding-bottom: 32px;
+      padding-top: 32px;
+      padding-bottom: 32px;
     }
 
     color: var(--primary-text-color);
