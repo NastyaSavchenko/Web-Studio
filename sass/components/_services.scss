@@ -1,7 +1,7 @@
 .services {
     padding-top: 0;
 
-    @media screen and (max-width: $pre-desc) {
+    @media screen and (max-width: $desc) {
         display: none;
     }
 

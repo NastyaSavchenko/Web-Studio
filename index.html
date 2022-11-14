@@ -287,11 +287,21 @@
           <ul class="services__list">
             <li class="services__items">
               <div class="services-wrapper">
-                <img
+              <picture>
+                <source srcset="
+                ./images/services/laptop-1200.webp 1x, 
+                ./images/services/laptop-1200@2x.webp 2x 
+                "
+                type="image/webp"
+                media="(min-width: 1200px)"
+                />
+                <img src="./images/services/laptop-1200.jpg 1x, ./images/services/laptop-1200@2x.jpg 2x" alt="Програмування">
+              </picture>
+                <!-- <img
                   src="./images/laptop.jpg"
                   alt="Програмування коду"
                   width="370"
-                />
+                /> -->
                 <div class="services-wrapper__text">
                   <p>Десктопні додатки</p>
                 </div>
@@ -299,11 +309,21 @@
             </li>
             <li class="services__items">
               <div class="services-wrapper">
-                <img
+                <picture>
+                <source srcset="
+                ./images/services/mobile-1200.webp 1x, 
+                ./images/services/mobile-1200@2x.webp 2x 
+                "
+                type="image/webp"
+                media="(min-width: 1200px)"
+                />
+                <img src="./images/services/mobile-1200.jpg 1x, ./images/services/mobile-1200@2x.jpg 2x" alt="Мобільні додатки">
+              </picture>
+                <!-- <img
                   src="./images/phone.jpg"
                   alt="Розробка інтерфейсу"
                   width="370"
-                />
+                /> -->
                 <div class="services-wrapper__text">
                   <p>Мобільні додатки</p>
                 </div>
@@ -311,11 +331,21 @@
             </li>
             <li class="services__items">
               <div class="services-wrapper">
-                <img
+                <picture>
+                <source srcset="
+                ./images/services/design-1200.webp 1x, 
+                ./images/services/design-1200@2x.webp 2x 
+                "
+                type="image/webp"
+                media="(min-width: 1200px)"
+                />
+                <img src="./images/services/design-1200.jpg 1x, ./images/services/design-1200@2x.jpg 2x" alt="Розробка дизайну">
+              </picture>
+                <!-- <img
                   src="./images/design.jpg"
                   alt="Розробка дизайну"
                   width="370"
-                />
+                /> -->
                 <div class="services-wrapper__text">
                   <p>Дизайнерські рішення</p>
                 </div>
@@ -327,17 +357,44 @@
 
       <!-- Команда -->
 
-      <section class="teem section">
+      <section class="team section">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
           <ul class="team-list">
             <li class="team-list__items">
-              <img
+              <picture>
+                <source srcset="
+                ./images/team/product-480.webp 1x, 
+                ./images/team/product-480@2x.webp 2x 
+                "
+                type="image/webp"
+                media="(max-width: 767px)"
+                />
+
+                <source srcset="
+                ./images/team/product-1200.webp 1x, 
+                ./images/team/product-1200@2x.webp 2x 
+                "
+                type="image/webp"
+                media="(min-width: 1200px)"
+                />
+
+                <source srcset="
+                ./images/team/product-768.webp 1x, 
+                ./images/team/product-768@2x.webp 2x 
+                "
+                type="image/webp"
+                media="(min-width: 768px)"
+                />
+
+                <img class="team-list__photo" src="./images/team/product-1200.jpg 1x, ./images/team/product-1200@2x.jpg 2x" alt="Продакт менеджер">
+              </picture>
+              <!-- <img
                 class="team-list__photo"
                 src="./images/product-designer.jpg"
                 alt="Продакт менеджер"
                 width="270"
-              />
+              /> -->
               <h3 class="team-list__title">Ігор Дем'яненко</h3>
               <p lang="en" class="team-list__text">Product Designer</p>
               <ul class="social">
@@ -372,12 +429,42 @@
               </ul>
             </li>
             <li class="team-list__items">
-              <img
+
+              <picture>
+                <source srcset="
+                ./images/team/frontend-480.webp 1x, 
+                ./images/team/frontend-480@2x.webp 2x 
+                "
+                type="image/webp"
+                media="(max-width: 767px)"
+                />
+
+                <source srcset="
+                ./images/team/frontend-1200.webp 1x, 
+                ./images/team/frontend-1200@2x.webp 2x 
+                "
+                type="image/webp"
+                media="(min-width: 1200px)"
+                />
+
+                <source srcset="
+                ./images/team/frontend-768.webp 1x, 
+                ./images/team/frontend-768@2x.webp 2x 
+                "
+                type="image/webp"
+                media="(min-width: 768px)"
+                />
+
+                <img class="team-list__photo" src="./images/team/frontend-1200.jpg 1x, ./images/team/frontend-1200@2x.jpg 2x" alt="Фронтенд розробник">
+              </picture>
+
+              <!-- <img
                 class="team-list__photo"
                 src="./images/frontend-develope.jpg"
                 alt="Фронтенд розробник"
                 width="270"
-              />
+              /> -->
+
               <h3 class="team-list__title">Ольга Рєпіна</h3>
               <p lang="en" class="team-list__text">Frontend Developer</p>
               <ul class="social">
@@ -412,12 +499,42 @@
               </ul>
             </li>
             <li class="team-list__items">
-              <img
+
+              <picture>
+                <source srcset="
+                ./images/team/marketing-480.webp 1x, 
+                ./images/team/marketing-480@2x.webp 2x 
+                "
+                type="image/webp"
+                media="(max-width: 767px)"
+                />
+
+                <source srcset="
+                ./images/team/marketing-1200.webp 1x, 
+                ./images/team/marketing-1200@2x.webp 2x 
+                "
+                type="image/webp"
+                media="(min-width: 1200px)"
+                />
+
+                <source srcset="
+                ./images/team/marketing-768.webp 1x, 
+                ./images/team/marketing-768@2x.webp 2x 
+                "
+                type="image/webp"
+                media="(min-width: 768px)"
+                />
+
+                <img class="team-list__photo" src="./images/team/marketing-1200.jpg 1x, ./images/team/marketing-1200@2x.jpg 2x" alt="Маркетолог">
+              </picture>
+
+              <!-- <img
                 class="team-list__photo"
                 src="./images/marketing.jpg"
                 alt="Маркетолог"
                 width="270"
-              />
+              /> -->
+
               <h3 class="team-list__title">Микола Тарасов</h3>
               <p lang="en" class="team-list__text">Marketing</p>
               <ul class="social">
@@ -452,12 +569,42 @@
               </ul>
             </li>
             <li class="team-list__items">
-              <img
+
+              <picture>
+                <source srcset="
+                ./images/team/designer-480.webp 1x, 
+                ./images/team/designer-480@2x.webp 2x 
+                "
+                type="image/webp"
+                media="(max-width: 767px)"
+                />
+
+                <source srcset="
+                ./images/team/designer-1200.webp 1x, 
+                ./images/team/designer-1200@2x.webp 2x 
+                "
+                type="image/webp"
+                media="(min-width: 1200px)"
+                />
+
+                <source srcset="
+                ./images/team/designer-768.webp 1x, 
+                ./images/team/designer-768@2x.webp 2x 
+                "
+                type="image/webp"
+                media="(min-width: 768px)"
+                />
+
+                <img class="team-list__photo" src="./images/team/designer-1200.jpg 1x, ./images/team/designer-1200@2x.jpg 2x" alt="Креативний дизайнер">
+              </picture>
+
+              <!-- <img
                 class="team-list__photo"
                 src="./images/ul-designer.jpg"
                 alt="Креативний дизайнер"
                 width="270"
-              />
+              /> -->
+
               <h3 class="team-list__title">Михайло Єрмаков</h3>
               <p lang="en" class="team-list__text">UI Designer</p>
               <ul class="social">
@@ -625,7 +772,7 @@
         <div class="subscribe-wrapper">
           <p class="footer-title">Підпишіться на розсилку</p>
           <form class="subscribe-box">
-            <label for="subscribe">
+            <label class="subscribe" for="subscribe">
               <input
                 class="subscribe__input input"
                 type="email"

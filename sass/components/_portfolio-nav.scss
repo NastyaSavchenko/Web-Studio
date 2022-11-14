@@ -1,13 +1,42 @@
+.nav-wrap{
+    @media screen and (max-width: $pre-tab) {
+        width: 326px;
+    }
+}
+
 .work-nav {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
+    margin-bottom: 40px;
 
-    margin-bottom: 50px;
+    @media screen and (min-width: $tab) {
+            justify-content: center;
+            margin-bottom: 50px;
+    
+            &__items:not(:last-child) {
+                margin-right: 8px;
+            }
+        }
 
-    &__items:not(:last-child) {
+    &__items {
         margin-right: 8px;
+        margin-bottom: 15px;
+
+        &:nth-child(n+4) {
+            margin-bottom: 0;
+        }
+
+        &:nth-child(2n+3) {
+            margin-right: 0;
+        }
+
+                 @media screen and (min-width: $tab) {
+                     &__items:not(:last-child) {
+                         margin-right: 8px;
+                     }
+                 }
     }
+
 
     &__button {
         padding: 6px 22px;
